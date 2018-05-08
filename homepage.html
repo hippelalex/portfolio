@@ -16,24 +16,26 @@
 
 <!-- ************************** HOME ******************* -->
 
-<div id="home">
-	<div class="logo">
-		<a href="#">mealex.</a>
-	</div>
+
+	<header id="header">
+		<div class="logo">
+			<a href="#">mealex.</a>
+		</div>
 		<ul class="menu">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Service</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#service">Service</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
-		<div class="hero-bg">
-			<div class="hero-img">
-				<img src="./images/alex-vidal-photo.png" alt="alex vidal photo" />
-			</div>
+	</header>
+
+<div id="home">
+		<div class="hero-img">
+			<img src="./images/alex-vidal-photo.png" alt="alex vidal photo" />
 			<div class="hero-border-2"></div>
 		</div>
-	<div id="hero-content">
+	<div class="hero-content">
 			<h1>alex vidal</h1>
 			<p>Full Stack Developer</p>
 			<button class="btn-hireme">HIRE ME</button>
@@ -43,7 +45,7 @@
 </div>
 	<!-- ************************** ABOUT ******************* -->
 
-<div class="about">
+<div id="about">
 		<h1>about</h1>
 		<div class="span-hr"></div>
 		<p>Hello! I'm Alex, a full stuck developer, a Ruby enthusiast, and a guy slighty obsessed for code quality. Also I'm a co-founder of pykod.com. I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
@@ -51,7 +53,7 @@
 </div>
 
 	<!-- ************************** SKILLS ******************* -->
-	<div class="skills">
+	<div id="skills">
 		<h1>my skils</h1>
 		<div class="span-hr"></div>
 		<div class="prog-bars">
@@ -71,7 +73,7 @@
 
 	</div>
 	<!-- ************************** WHAT-I-DO ******************* -->
-	<div class="what-i-do">
+	<div id="service">
 		<h1>what i do</h1>
 		<div class="span-hr"></div>
 		<div class="front-end">
@@ -89,9 +91,9 @@
 			<h2>Consultancy</h2>
 			<p>As well as providing development services, I can also help you decide strategic roadmaps via consultancy services.</p>
 		</div>
-		<div class="what-i-do-bg"></div>
+		<div class="service-bg"></div>
 	</div>
-	<div class="works">
+	<div id="portfolio">
 		<h1>MY RECENT WORKS</h1>
 		<div class="span-hr"></div>
 		<ul class="works-gallary">
@@ -142,7 +144,7 @@
 	</li>
 	</ul>
 
-<div class="contact">
+<div id="contact">
 	<h1>contact</h1>
 	<div class="span-hr"></div>
 	<input type="text" placeholder="Name" />
@@ -150,11 +152,13 @@
 	<input type="text" placeholder="Message" />
 	<button class="btn-hireme">HIRE ME</button>
 </div>
-<ul class="footer">
-	<li class="social"></li>
-	<li class="copyRights">2017. All Rights Reserved</li>
-	<li class="btn-up"></li>
-</ul>
+<footer id="footer">
+	<ul>
+		<li class="social"></li>
+		<li class="copyRights">2017. All Rights Reserved</li>
+		<li class="btn-up"></li>
+	</ul>
+	</footer>
 
 </body>
 </html>
