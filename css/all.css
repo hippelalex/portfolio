@@ -77,14 +77,20 @@ strong {}
 	padding:0 0;
 }
 
-#header {
+#home {
 	width:100%;
 	display:block;
 	position:relative;
 	margin-top: 50px;
 }
 
-#header .logo a {
+#home .logo {
+	margin: 20px;
+
+}
+
+#home .logo a {
+
 	font-family: 'Montserrat';
 	font-size: 24px;
 	color: black;
@@ -100,20 +106,50 @@ strong {}
   background-position: center;
 }
 
-#header .navigation{
+#home .menu{
+	margin: -50px 100px auto;
 	height: 88px;
 	position: relative;
 	float: right;
 }
-#header .navigation li{
+#home .menu li{
 	display: inline-block;
 	margin: 0 -2px 0 -2px;
 	font-family: 'Cormorant';
 	text-transform: uppercase;
+
 }
-#header .navigation li a:hover{
+
+#home .menu li a{
+		color: black;
+		margin: 0px 10px;
+}
+
+#home .menu li a:hover{
 	border-bottom: 2px solid black;
 }
+
+#home .hero-bg{
+	width: 648px;
+	height: 800px;
+	background-color: #e1e1e1;
+	float: right;
+	margin: -140px auto;
+	z-index: 0;
+}
+#home .hero-bg .hero-img{
+	width: 450px;
+	height: 727px;
+	margin: 20px 0 0 0;
+	vertical-align: bottom;
+
+
+}
+
+#hero-area {
+	width: 1170px;
+}
+
 
 
 
