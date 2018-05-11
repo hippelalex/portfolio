@@ -88,7 +88,7 @@ strong {}
 	width:100%;
 	display:block;
 	position:relative;
-	margin-top: 50px;
+	margin-top: 75px;
 }
 
 .span-hr {
@@ -102,19 +102,20 @@ strong {}
   background-position: center;
 }
 #header .logo {
-	margin: 20px;
+	margin: 41px 0 0 98px;
 	width: 1170px;
 }
 
 #header .logo a {
 	font-family: 'Montserrat';
 	font-size: 24px;
+	font-weight: 700;
 	color: black;
 }
 
 #header .menu{
 	margin: -50px auto;
-	height: 88px;
+	height: 90px;
 	width: 1170px;
 	position: relative;
 	text-align: right;
@@ -141,7 +142,7 @@ strong {}
 	height: 800px;
 	background-color: #e1e1e1;
 	float: right;
-	margin: -140px auto;
+	margin: -170px auto;
 	z-index: 0;
 }
 #home .hero-img img{
@@ -158,7 +159,7 @@ strong {}
 }
 
 #home .hero-content {
-	
+
 }
 
 
