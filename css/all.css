@@ -62,7 +62,7 @@ h4 {font: 21px sans-serif;}
 h5 {font: 18px sans-serif;}
 h6 {font: 16px sans-serif;}
 p {
-	font: 22px sans-serif;
+	font: 16px sans-serif;
 	font-family: 'Cormorant';
 }
 strong {}
@@ -94,8 +94,9 @@ strong {}
 }
 
 #header {
-	display: inline-block;
-	vertical-align: baseline;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 1170px;
 	height: 50px;
 	margin:50px 0 0 100px;
@@ -188,7 +189,8 @@ margin: 72px auto;
 	background-color: transparent;
 	border: 1px solid #212121;
 	font-size: 16px ;
-	font-weight: 300;
+	font-weight: 400;
+	font-family: 'Cormorant';
 }
 
 #home .hero-content .btn-expmore {
@@ -197,7 +199,8 @@ margin: 72px auto;
 	background-color: #ffffff;
 	border: 1px solid #212121;
 	font-size: 16px ;
-	font-weight: 300;
+	font-weight: 400;
+	font-family: 'Cormorant';
 	margin: 0 0 0 20px;
 }
 
@@ -212,22 +215,99 @@ margin: 72px auto;
 }
 
 #home .hero-border-1{
-	width: 284px;
+	width: 350px;
 	height: 457px;
 	border: 17px solid #e8e8e8;
 	border-left: none;
-	margin: -250px 0 0 -110px;
+	margin: -250px 0 0 -180px;
 	z-index: 1;
 }
 /*************************** ABOUT*********************/
 #about {
-	margin: 800px auto;
+	margin: 200px 0 0 0;
+	text-align: center;
+}
+
+#about p{
+	width: 570px;
+	height: 100px;
+	margin: 35px auto;
+}
+
+#about .btn-download{
+	width: 208px;
+	height: 51px;
+	background-color: #ffffff;
+	border: 1px solid #212121;
+	font-size: 16px ;
+	font-weight: 400;
+	font-family: 'Cormorant';
+}
+
+#about .btn-download:hover{
+	background-color: #212121;
+	color: white;
+}
+/*************************** SKILLS*********************/
+#skills {
+	margin: 120px 0 0 0;
+	text-align: center;
+
+}
+#skills .progbars{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1170px;
+	margin: 40px 0 0 0;
+	z-index: 1;
+}
+#skills .progbars progress{
+	color: #212121;
+	background-color: #dfdfdf;
+	border: none;
+g
+
+}
+#skills .progbars span{
+	font-size: 24px ;
+	font-weight: 300;
+	font-family: 'Cormorant';
+	font-weight: bold;
+	text-transform: uppercase;
+
 
 }
 
 
 
+/*************************** WHAT-I-DO*********************/
 
+.service-bg{
+	background-image: url(../image/img-bg-whatido.png);
+	position: relative;
+	z-index: 0;
+	/* margin: -120px auto; */
+}
+
+#service {
+	margin: 120px auto;
+	text-align: center;
+	width: 1170px;
+	height: 517px;
+	background-color: white;
+	position: relative;
+	z-index: 1;
+}
+#service .conteiners{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px auto;
+
+
+}
 
 
 /****************************************************************              PC              ***************************************************/
