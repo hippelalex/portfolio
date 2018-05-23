@@ -432,17 +432,40 @@ margin: 72px auto;
 }
 #footer .social{
 	margin: 0 0 0 97px;
+	display: inline-block;
 }
-#footer .social .facebook{
+#footer .social div{
 	width: 34px;
 	height: 34px;
 	border: 1px solid #ffffff;
 	border-radius: 50%;
+	float: left;
+	margin: 0 10px auto;
 }
-#footer .social .facebook i{
+#footer .social i{
 	position: relative;
 	top: 30%;
 	left: 35%;
+}
+#footer .social .linkedin i  {
+	left: 30%;
+}
+#footer .social .googleplus i {
+	left: 25%;
+}
+#footer .btn-up{
+	width: 42px;
+	height: 42px;
+	background-color: white;
+	border-radius: 50%;
+	float: right;
+	margin: 0 10px auto;
+}
+
+#footer .btn-up i{
+	position: relative;
+	top: 30%;
+	left: 42%;
 }
 
 
