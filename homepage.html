@@ -8,6 +8,7 @@
 	<!-- <link rel="stylesheet" href="font/font-face.css" type="text/css" /> -->
 	<link href="https://fonts.googleapis.com/css?family=Cormorant:300,400,500" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>mealex</title>
 </head>
@@ -15,19 +16,20 @@
 <body>
 
 <!-- ************************** HOME ******************* -->
-
-<header id="header">
-	<div class="logo">
-		<a href="#">mealex.</a>
-	</div>
-	<ul class="menu">
-		<li><a href="#home">Home</a></li>
+<div class="layout">
+	<header id="header">
+		<div class="logo">
+			<a href="#">mealex.</a>
+		</div>
+		<ul class="menu">
+			<li><a href="#home">Home</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#service">Service</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
-	</ul>
-</header>
+		</ul>
+	</header>
+</div>
 
 
 <div id="home">
@@ -44,38 +46,40 @@
 	</div>
 </div>
 	<!-- ************************** ABOUT ******************* -->
-
-<div id="about">
+<div class="layout">
+	<div id="about">
 		<h1>about</h1>
 		<div class="span-hr"></div>
 		<p>Hello! I'm <strong>Alex</strong>, a full stuck developer, a Ruby enthusiast, and a guy slighty obsessed for code quality. Also I'm a co-founder of pykod.com. I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
 		<button class="btn-download">DOWNLOAD MY CV</button>
-</div>
+	</div>
 
 	<!-- ************************** SKILLS ******************* -->
 	<div id="skills">
 		<h1>my skils</h1>
 		<div class="span-hr"></div>
 		<div class="progbars">
-			<span>html/css</span>
-			<progress class="html-css" value="90" max="100"></progress>
-			<h2>javascript</h2>
-			<progress class="js" value="70" max="100"></progress>
-			<h2>php</h2>
-			<progress class="php" value="70" max="100"></progress>
-			<h2>pyton</h2>
-			<progress class="pyton" value="60" max="100"></progress
-			<h2>ruby</h2>
-			<progress class="ruby" value="95" max="100"></progress>
-			<h2>java</h2>
-			<progress class="java" value="90" max="100"></progress>
+			<div>
+				<span>html/css</span><br />
+				<progress class="html-css" value="90" max="100"></progress><br />
+				<span>pyton</span><br />
+				<progress class="pyton" value="60" max="100"></progress>
+			</div>
+			<div>
+				<span>javascript</span><br />
+				<progress class="js" value="70" max="100"></progress><br />
+				<span>ruby</span><br />
+				<progress class="ruby" value="95" max="100"></progress><br />
+			</div>
+			<div>
+				<span>php</span><br />
+				<progress class="php" value="70" max="100"></progress><br />
+				<span>java</span><br />
+				<progress class="java" value="90" max="100"></progress><br />
+			</div>
 		</div>
-
 	</div>
 	<!-- ************************** WHAT-I-DO ******************* -->
-	<div class="service-bg">
-		<!-- <img src="./images/img-bg-whatido.jpg" alt=""> -->
-	</div>
 	<div id="service">
 		<h1>what i do</h1>
 		<div class="span-hr"></div>
@@ -96,44 +100,106 @@
 				<p>As well as providing development services, I can also help you decide strategic roadmaps via consultancy services.</p>
 			</div>
 		</div>
-
-
 	</div>
+	<div class="service-bg">
+		<!-- <img src="./images/img-bg-whatido.jpg" alt=""> -->
+	</div>
+
+	<!-- ************************** MY RECENT WORKS ******************* -->
+
 	<div id="portfolio">
 		<h1>MY RECENT WORKS</h1>
 		<div class="span-hr"></div>
-		<ul class="works-gallary">
-			<li class="img-works-1">
-				<img src="./images/img-works-1.jpg" alt="img-works-1"/>
+		<ul class="tabs">
+			<li>
+				<div class="front">
+					<img src="./images/img-works-1.jpg" alt="img-works-1"/>
+				</div>
+				<div class="back">
+					<h2>Project Title</h2>
+					<ul class="links">
+						<li class="view"></li>
+						<li class="link"></li>
+						<li class="share"></li>
+					</ul>
+					<div class="border"></div>
+				</div>
 			</li>
-			<li class="img-works-2">
-				<img src="./images/img-works-2.jpg" alt="img-works-2"/>
+			<li>
+				<div class="front">
+					<img src="./images/img-works-2.jpg" alt="img-works-2"/>
+				</div>
+				<div class="back">
+					<h2>Project Title</h2>
+					<ul class="links">
+						<li class="view"></li>
+						<li class="link"></li>
+						<li class="share"></li>
+					</ul>
+					<div class="border"></div>
+				</div>
 			</li>
-			<li class="img-works-3">
-				<img src="./images/img-works-3.jpg" alt="img-works-3"/>
+			<li>
+				<div class="front">
+					<img src="./images/img-works-3.jpg" alt="img-works-3"/>
+				</div>
+				<div class="back">
+					<h2>Project Title</h2>
+					<ul class="links">
+						<li class="view"></li>
+						<li class="link"></li>
+						<li class="share"></li>
+					</ul>
+					<div class="border"></div>
+				</div>
 			</li>
-			<li class="img-works-4">
-				<img src="./images/img-works-4.jpg" alt="img-works-4"/>
+			<li>
+				<div class="front">
+					<img src="./images/img-works-4.jpg" alt="img-works-4"/>
+				</div>
+				<div class="back">
+					<h2>Project Title</h2>
+					<ul class="links">
+						<li class="view"></li>
+						<li class="link"></li>
+						<li class="share"></li>
+					</ul>
+					<div class="border"></div>
+				</div>
 			</li>
-			<li class="img-works-5">
-				<img src="./images/img-works-5.jpg" alt="img-works-5"/>
+			<li>
+				<div class="front">
+					<img src="./images/img-works-5.jpg" alt="img-works-5"/>
+				</div>
+				<div class="back">
+					<h2>Project Title</h2>
+					<ul class="links">
+						<li class="view"></li>
+						<li class="link"></li>
+						<li class="share"></li>
+					</ul>
+					<div class="border"></div>
+				</div>
 			</li>
-			<li class="img-works-6">
-				<img src="./images/img-works-6.jpg" alt="img-works-6"/>
+			<li>
+				<div class="front">
+					<img src="./images/img-works-6.jpg" alt="img-works-6"/>
+				</div>
+				<div class="back">
+					<h2>Project Title</h2>
+					<ul class="links">
+						<li class="view"></li>
+						<li class="link"></li>
+						<li class="share"></li>
+					</ul>
+					<div class="border"></div>
+				</div>
 			</li>
 		</ul>
 		<button class="btn-loadmore">LOAD MORE</button>
-
-		<div class="works-hover">
-			<h2>Project Title</h2>
-			<ul class="links">
-				<li class="view"></li>
-				<li class="link"></li>
-				<li class="share"></li>
-			</ul>
-			<div class="border"></div>
-		</div>
 	</div>
+
+</div>
 	<!-- ***********PRORRESS BAR ******* -->
 	<ul class="progress">
 	<li>
@@ -149,18 +215,23 @@
 		<h2>Seconds on this site! What are you waiting for?</h2>
 	</li>
 	</ul>
-
-<div id="contact">
-	<h1>contact</h1>
-	<div class="span-hr"></div>
-	<input type="text" placeholder="Name" />
-	<input type="text" placeholder="Mail" />
-	<input type="text" placeholder="Message" />
-	<button class="btn-hireme">HIRE ME</button>
+<div class="layout">
+	<div id="contact">
+		<h1>contact</h1>
+		<div class="span-hr"></div>
+		<input type="text" placeholder="Name" />
+		<input type="text" placeholder="Mail" />
+		<input type="text" placeholder="Message" />
+		<button class="btn-hireme">HIRE ME</button>
+	</div>
 </div>
 <footer id="footer">
 	<ul>
-		<li class="social"></li>
+		<li class="social">
+			<div class="facebook">
+				<i class="fa fa-facebook" style="font-size:16px;color:white;"></i>
+			</div>
+		</li>
 		<li class="copyRights">2017. All Rights Reserved</li>
 		<li class="btn-up"></li>
 	</ul>

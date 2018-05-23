@@ -56,7 +56,11 @@ h1 {
 	/* text-align: center; */
 
 }
-h2 {font: 25px sans-serif;}
+h2 {font: 30px sans-serif;
+font-family: 'Cormorant';
+font-weight: 500;
+/* color: white; */
+}
 h3 {font: 23px sans-serif;}
 h4 {font: 21px sans-serif;}
 h5 {font: 18px sans-serif;}
@@ -73,6 +77,11 @@ strong {}
 	width: 1366px;
 } */
 
+.layout {
+  margin: 0 auto;
+  position: relative;
+  width: 1170px;
+}
 
 .span-hr {
 	display: block;
@@ -96,14 +105,11 @@ strong {}
 #header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	width: 1170px;
 	height: 50px;
-	margin:50px 0 0 100px;
+	margin:50px auto;
 	z-index: 1;
 }
 #home {
-	/* width: 1366px; */
 	display: block;
 	position: relative;
 	margin-top: 75px;
@@ -125,7 +131,6 @@ strong {}
 	position: relative;
 	float: right;
 	z-index: 1;
-	margin: 0 120px 0 0;
 }
 
 #header .menu li{
@@ -258,26 +263,39 @@ margin: 72px auto;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	width: 1170px;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content:  space-around;
 	margin: 40px 0 0 0;
 	z-index: 1;
+}
+#skills .progbars div{
+	flex-basis: 370px;
 }
 #skills .progbars progress{
 	color: #212121;
 	background-color: #dfdfdf;
 	border: none;
-g
-
 }
+
+#skills .progbars progress::-moz-progress-bar {
+	    background: #dfdfdf;
+}
+
+#skills .progbars progress::-webkit-progress-bar {
+	    background:#dfdfdf;
+}
+
+#skills .progbars progress::-webkit-progress-value {
+	    color: #212121;
+}
+
 #skills .progbars span{
 	font-size: 24px ;
 	font-weight: 300;
 	font-family: 'Cormorant';
-	font-weight: 400;
 	text-transform: uppercase;
-
-
+	text-align: left;
 }
 
 
@@ -288,13 +306,12 @@ g
 	background-image: url(../image/img-bg-whatido.png);
 	position: relative;
 	z-index: 0;
-	/* margin: -120px auto; */
+	margin: -120px auto;
 }
 
 #service {
 	margin: 120px auto;
 	text-align: center;
-	width: 1170px;
 	height: 517px;
 	background-color: white;
 	position: relative;
@@ -305,8 +322,127 @@ g
 	justify-content: space-between;
 	align-items: center;
 	margin: 40px auto;
+}
+#service .conteiners .front-end, .back-end, .consultancy{
+	width: 300px;
+	height: 250px;
+}
+
+#service h2{
+	margin: 15px 0 10px;
+}
+
+#portfolio {
+	margin: 120px auto;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+#portfolio .tabs{
+	width: 100%;
+	margin: 40px 0 30px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#portfolio .tabs li{
+	display: inline-block;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: 370px;
+  height: 282px;
+  margin: 25px 20px 5px 0;
+}
+#portfolio .tabs li:nth-child(3n) {
+  margin: 25px 0 5px 0;
+}
+
+#portfolio .tabs li:hover .front {
+  z-index: 1;
+}
+
+#portfolio .tabs li:hover .back {
+  z-index: 10;
+}
+
+#portofolio .tabs li .front {
+  display: block;
+  position: relative;
+  width: 370px;
+  height: 282px;
+  z-index: 10;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#portofolio .tabs li .back {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 282px;
+  background-color: transparent;
+  z-index: 1;
+}
+#portfolio .btn-loadmore{
+	width: 174px;
+	height: 51px;
+	background-color: #ffffff;
+	border: 1px solid #212121;
+	font-size: 16px ;
+	font-weight: 400;
+	font-family: 'Cormorant';
+	margin: 0 0 0 20px;
+}
+#portfolio .btn-loadmore:hover{
+	background-color: #212121;
+	color: white;
+}
 
 
+
+
+
+
+/*************************Footer*************************/
+
+#footer {
+	width: 100%;
+	height: 103px;
+	background-color: #212121;
+}
+#footer ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+#footer .copyRights{
+	color: white;
+	font-family: 'Cormorant';
+	font-size: 16px;
+}
+#footer .social{
+	margin: 0 0 0 97px;
+}
+#footer .social .facebook{
+	width: 34px;
+	height: 34px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+}
+#footer .social .facebook i{
+	position: relative;
+	top: 30%;
+	left: 35%;
 }
 
 
