@@ -504,7 +504,39 @@ margin: 72px auto;
 
 
 /****************************************************************              PC              ***************************************************/
-@media (min-width: 978px) and (max-width: 1217px) {}
+@media (min-width: 978px) and (max-width: 1217px) {
+
+	#menubtn{
+	display: block;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	}
+
+	#menubtn span{
+	position: absolute;
+	background-color: black;
+	height: 2px;
+	width: 100%;
+	left: 0;
+
+	}
+	#menubtn span:first-of-type{
+	top: 0;
+	}
+	#menubtn span:nth-of-type(2){
+	top: 9px;
+	}
+	#menubtn span:last-of-type{
+	bottom: 0;
+	}
+
+
+
+}
 /****************************************************************              TABLET              ***********************************************/
 @media (min-width: 768px) and (max-width: 977px) {
 	.layout {
@@ -512,11 +544,77 @@ margin: 72px auto;
 		position:relative;
 		width:768px;
 	}
+
+	#menubtn{
+	display: block;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	}
+
+	#menubtn span{
+	position: absolute;
+	background-color: black;
+	height: 2px;
+	width: 100%;
+	left: 0;
+
+	}
+	#menubtn span:first-of-type{
+	top: 0;
+	}
+	#menubtn span:nth-of-type(2){
+	top: 9px;
+	}
+	#menubtn span:last-of-type{
+	bottom: 0;
+	}
+
 }
 /****************************************************************              MOBILE              ***********************************************/
 @media (min-width: 320px) and (max-width:767px) {
 	.layout {
 		width:100%;
 		padding:0;
+	}
+
+	#header .menu{
+		display: none;
+	}
+
+	#home {
+		width: 100%;
+	}
+
+	#menubtn{
+	display: block;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 2;
+	}
+
+	#menubtn span{
+	position: absolute;
+	background-color: black;
+	height: 2px;
+	width: 100%;
+	left: 0;
+
+	}
+	#menubtn span:first-of-type{
+	top: 0;
+	}
+	#menubtn span:nth-of-type(2){
+	top: 9px;
+	}
+	#menubtn span:last-of-type{
+	bottom: 0;
 	}
 }
