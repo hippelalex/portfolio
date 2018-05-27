@@ -53,7 +53,7 @@ h1 {
 	font-family: 'Cormorant';
 	text-transform: uppercase;
 	margin: 10px auto 0 auto;
-	/* text-align: center; */
+
 
 }
 h2 {font: 30px sans-serif;
@@ -254,7 +254,7 @@ margin: 72px auto;
 	color: white;
 }
 /*************************** SKILLS*********************/
-#skills {
+#skills h1  {
 	margin: 120px 0 0 0;
 	text-align: center;
 
@@ -272,22 +272,15 @@ margin: 72px auto;
 #skills .progbars div{
 	flex-basis: 370px;
 }
-#skills .progbars progress{
-	color: #212121;
-	background-color: #dfdfdf;
-	border: none;
+#skills .progbars .progressbar{
+	height: 16px;
+	width: 100%;
+	background-color:  #e2e2e2;
 }
-
-#skills .progbars progress::-moz-progress-bar {
-	    background: #dfdfdf;
-}
-
-#skills .progbars progress::-webkit-progress-bar {
-	    background:#dfdfdf;
-}
-
-#skills .progbars progress::-webkit-progress-value {
-	    color: #212121;
+#skills .progbars .progress{
+	height: 100%;
+	width: 0%;
+	background-color:  #212121;
 }
 
 #skills .progbars span{
@@ -303,10 +296,12 @@ margin: 72px auto;
 /*************************** WHAT-I-DO*********************/
 
 .service-bg{
-	background-image: url(../image/img-bg-whatido.png);
+	background-image: url(../images/img-bg-whatido.png);
+	width: 1366px;
+	height: 911px;
 	position: relative;
 	z-index: 0;
-	margin: -120px auto;
+	margin: -300px auto;
 }
 
 #service {
