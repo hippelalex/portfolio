@@ -7,30 +7,32 @@ function toggleMenu(){
 menu.classList.toggle('opened');
 }
 /**********************PROGRESSBAR***********************/
-var progressbar = document.getElementsByClassName('progressbar');
-// progressbar.forEach(function(element) {
-//     console.log(0);
+// [].forEach.call(document.getElementsByTagName(progressbar), function(el) {
+//     console.log(el);
 // });
-
-var progress = document.getElementsByClassName('progress')[0];
-// console.log(progress)
-// var span = document.getElementsByTagName('span')[0];
-var currentprogress = 0;
+var progressbar  = document.getElementsByClassName('progressbar')[0];
+var progress  = document.getElementsByClassName('progress')[0];
+var currentProgress = 0;
 var value = progressbar.getAttribute('data-value');
 var interval = setInterval(function(){
     animateProgress();
-}, 20);
+},20);
 function animateProgress(){
 
-    if(currentprogress <= value){
-        progress.style.width = currentprogress + '%';
-        // span.innerText = currentprogress + '%';
-        currentprogress++;
+    if (currentProgress <= value){
+        progress.style.width = currentProgress + '%';
+         currentProgress++;
     }
     else{
         clearInterval(interval);
     }
 
 }
+
+
+
+var progressbars = document.getElementsByClassName('progressbar');
+console.log(progressbars);
+
 
 
