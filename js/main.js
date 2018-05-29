@@ -9,7 +9,7 @@ menu.classList.toggle('opened');
 /**********************PROGRESSBAR***********************/
 
 
-let currentprogress = 0;
+var currentprogress = 0;
 let i = 0;
 while (i < document.getElementsByClassName('progressbar').length) {
     let progressbar = document.getElementsByClassName('progressbar')[i];
