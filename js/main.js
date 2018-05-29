@@ -7,32 +7,52 @@ function toggleMenu(){
 menu.classList.toggle('opened');
 }
 /**********************PROGRESSBAR***********************/
-// [].forEach.call(document.getElementsByTagName(progressbar), function(el) {
-//     console.log(el);
-// });
-var progressbar  = document.getElementsByClassName('progressbar')[0];
-var progress  = document.getElementsByClassName('progress')[0];
-var currentProgress = 0;
-var value = progressbar.getAttribute('data-value');
-var interval = setInterval(function(){
-    animateProgress();
-},20);
-function animateProgress(){
-
-    if (currentProgress <= value){
-        progress.style.width = currentProgress + '%';
-         currentProgress++;
-    }
-    else{
-        clearInterval(interval);
-    }
-
-}
 
 
+let currentprogress = 0;
+let i = 0;
+while (i < document.getElementsByClassName('progressbar').length) {
+    let progressbar = document.getElementsByClassName('progressbar')[i];
+    console.log(progressbar);
+    let progress = document.getElementsByClassName('progress')[i];
+    let value = progressbar.getAttribute('data-value');
+    let internal = setInterval(function () {
+        animateProgress();}, 50);
+    function animateProgress() {
+        if (currentprogress <= value) {
+            progress.style.width = currentprogress + '%';
+            currentprogress++;
+        }
+        else {
+            clearInterval(internal);
+        }
+    };
+        i++;
+    console.log(i);
+};
 
-var progressbars = document.getElementsByClassName('progressbar');
-console.log(progressbars);
+// var currentprogress = 0;
+// for (let i = 0; i < document.getElementsByClassName('progressbar').length; i++) {
+//     let progressbar = document.getElementsByClassName('progressbar')[i];
+//     console.log(progressbar)
+//     let progress = document.getElementsByClassName('progress')[i];
+//     let value = progressbar.getAttribute('data-value');
+//
+//     let internal = setInterval(function () {
+//         animateProgress();}, 50);
+//     function animateProgress() {
+//         if (currentprogress < value) {
+//             progress.style.width = currentprogress + '%';
+//             currentprogress++;
+//         }
+//         else {
+//             clearInterval(internal);
+//         }
+//     }
+//
+//     console.log(i);
+// };
+
 
 
 
