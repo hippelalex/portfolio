@@ -18,22 +18,17 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+*{
+	font-family: "Cormorant", sans-serif;
+}
 img {
-	border-style:none;
-	max-width:100%;
+border-style:none;
+max-width:100%;
 }
 a {text-decoration:none;}
 a:hover {text-decoration:none;}
-input, textarea, select {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	vertical-align:middle;
-	color:#000;
-	padding:0;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
+
 form fieldset {
 	margin:0;
 	padding:0;
@@ -50,16 +45,24 @@ input:focus::-webkit-input-placeholder{color:#bebebe;}
 /***************************************************              GENERAL STYLES             ***************************************************/
 h1 {
 	font: 36px sans-serif;
-	font-family: 'Cormorant';
+	/*font-family: 'Cormorant';*/
 	text-transform: uppercase;
 	margin: 10px auto 0 auto;
-
+}
+h1:after{
+	content: "";
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 60px;
+	height: 6px;
+	background-image: url("../images/span-hr.png");
+	background-repeat: no-repeat;
+	background-position: center;
 
 }
 h2 {font: 30px sans-serif;
-font-family: 'Cormorant';
+/*font-family: 'Cormorant';*/
 font-weight: 500;
-/* color: white; */
 }
 h3 {font: 23px sans-serif;}
 h4 {font: 21px sans-serif;}
@@ -67,7 +70,7 @@ h5 {font: 18px sans-serif;}
 h6 {font: 16px sans-serif;}
 p {
 	font: 16px sans-serif;
-	font-family: 'Cormorant';
+	/*font-family: 'Cormorant';*/
 }
 strong {}
 /**********************************************************              PC - LARGE             *************************************************/
@@ -77,22 +80,22 @@ strong {}
 	width: 1366px;
 } */
 
-.layout {
-  margin: 0 auto;
-  position: relative;
-  width: 1170px;
-}
+/*.layout {*/
+  /*margin: 0 auto;*/
+  /*position: relative;*/
+  /*width: 1170px;*/
+/*}*/
 
-.span-hr {
-	display: block;
-	position: relative;
-	margin: 10px auto 0 auto;
-	width: 60px;
-	height: 6px;
-	background-image: url(../images/span-hr.png);
-	background-repeat: no-repeat;
-  background-position: center;
-}
+/*.span-hr {*/
+	/*display: block;*/
+	/*position: relative;*/
+	/*margin: 10px auto 0 auto;*/
+	/*width: 60px;*/
+	/*height: 6px;*/
+	/*background-image: url(../images/span-hr.png);*/
+	/*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+/*}*/
 
 #footer {
 	display:block;
@@ -103,10 +106,13 @@ strong {}
 }
 
 #header {
-	display: flex;
+	display: inline-flex;
 	justify-content: space-between;
-	height: 50px;
-	margin:50px auto;
+	width: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
 	z-index: 1;
 }
 #home {
@@ -117,6 +123,7 @@ strong {}
 #header .logo{
 	float: left;
 	text-transform: lowercase;
+	margin: 41px 0 0 7.247%;
 }
 
 #header .logo a {
@@ -136,7 +143,7 @@ strong {}
 #header .menu li{
 	display: inline-block;
 	margin: 0 -2px 0 -2px;
-	font-family: 'Cormorant';
+	/*font-family: 'Cormorant';*/
 	text-transform: uppercase;
 }
 
@@ -179,7 +186,7 @@ margin: 72px auto;
 
 #home .hero-content h1 {
 	font-size: 46px;
-	font-family: 'Cormorant';
+	/*font-family: 'Cormorant';*/
 	font-weight: bold;
 }
 
@@ -195,7 +202,7 @@ margin: 72px auto;
 	border: 1px solid #212121;
 	font-size: 16px ;
 	font-weight: 400;
-	font-family: 'Cormorant';
+	/*font-family: 'Cormorant';*/
 }
 
 #home .hero-content .btn-expmore {
@@ -205,7 +212,7 @@ margin: 72px auto;
 	border: 1px solid #212121;
 	font-size: 16px ;
 	font-weight: 400;
-	font-family: 'Cormorant';
+	/*font-family: 'Cormorant';*/
 	margin: 0 0 0 20px;
 }
 
@@ -246,7 +253,7 @@ margin: 72px auto;
 	border: 1px solid #212121;
 	font-size: 16px ;
 	font-weight: 400;
-	font-family: 'Cormorant';
+	/*font-family: 'Cormorant';*/
 }
 
 #about .btn-download:hover{
@@ -254,6 +261,10 @@ margin: 72px auto;
 	color: white;
 }
 /*************************** SKILLS*********************/
+#skills {
+	margin: 0 7.247% 71px 7.247%;
+}
+
 #skills h1  {
 	margin: 120px 0 0 0;
 	text-align: center;
@@ -286,7 +297,7 @@ margin: 72px auto;
 #skills .progbars span{
 	font-size: 24px ;
 	font-weight: 300;
-	font-family: 'Cormorant';
+	/*font-family: 'Cormorant';*/
 	text-transform: uppercase;
 	text-align: left;
 }
@@ -404,7 +415,7 @@ margin: 72px auto;
 	border: 1px solid #212121;
 	font-size: 16px ;
 	font-weight: 400;
-	font-family: 'Cormorant';
+	/*font-family: 'Cormorant';*/
 	margin: 0 0 0 20px;
 }
 #portfolio .btn-loadmore:hover{
@@ -430,7 +441,7 @@ margin: 72px auto;
 	border: 1px solid #212121;
 	font-size: 16px ;
 	font-weight: 400;
-	font-family: 'Cormorant';
+	/*font-family: 'Cormorant';*/
 	margin: 0 0 0 20px;
 }
 #contact .btn-hireme:hover{
