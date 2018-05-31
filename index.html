@@ -5,8 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width; initial-scale=1;">
 	<link rel="stylesheet" href="css/all.css" type="text/css"/>
-	<link href="https://fonts.googleapis.com/css?family=Cormorant:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- <script type="text/javascript" src="js/main.js"></script> -->
 	<title>mealex</title>
@@ -20,7 +20,7 @@
 
 	</div>
 <!-- ************************** HOME ******************* -->
-
+<div class="layout">
 	<header id="header">
 		<div class="logo">
 			<a href="#">mealex.</a>
@@ -33,7 +33,7 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</header>
-<main>
+</div>
 
 
 <div id="home">
@@ -42,7 +42,7 @@
 		<div class="hero-border-2"></div>
 	</div>
 	<div class="hero-content">
-			<h2>alex vidal</h2>
+			<h1>alex vidal</h1>
 			<p>Full Stack Developer</p>
 			<button class="btn-hireme">HIRE ME</button>
 			<button class="btn-expmore">EXPLORE MORE</button>
@@ -50,18 +50,20 @@
 	</div>
 </div>
 	<!-- ************************** ABOUT ******************* -->
-
+<div class="layout">
 	<div id="about">
-		<h3>about</h3>
-			<p>Hello! I'm <span>Alex</span>, a full stuck developer, a Ruby enthusiast, and a guy slighty obsessed for code quality. Also I'm a co-founder of pykod.com. I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
-		    <button class="btn-download">DOWNLOAD MY CV</button>
+		<h1>about</h1>
+		<div class="span-hr"></div>
+		<p>Hello! I'm <span>Alex</span>, a full stuck developer, a Ruby enthusiast, and a guy slighty obsessed for code quality. Also I'm a co-founder of pykod.com. I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
+		<button class="btn-download">DOWNLOAD MY CV</button>
 	</div>
 
 	<!-- ************************** SKILLS ******************* -->
 	<div id="skills">
 		<h1>my skils</h1>
-        <div class="progbars">
-				<div class="htmlcss">
+		<div class="span-hr"></div>
+		<div class="progbars">
+			<div class="htmlcss">
 				<span>html/css</span>
 				<div class="progressbar" data-value='90'>
 					<div class="progress"></div>
@@ -102,6 +104,7 @@
 	<!-- ************************** WHAT-I-DO ******************* -->
 	<div id="service">
 		<h1>what i do</h1>
+		<div class="span-hr"></div>
 		<div class="conteiners">
 			<div class="front-end">
 				<img src="./images/img-monitor.png" alt="img-monitor"/>
@@ -120,14 +123,15 @@
 			</div>
 		</div>
 	</div>
-	<!--<div class="service-bg">-->
-		<!--&lt;!&ndash; <img src="./images/img-bg-whatido.jpg" alt=""> &ndash;&gt;-->
-	<!--</div>-->
+	<div class="service-bg">
+		<!-- <img src="./images/img-bg-whatido.jpg" alt=""> -->
+	</div>
 
 	<!-- ************************** MY RECENT WORKS ******************* -->
 
 	<div id="portfolio">
 		<h1>MY RECENT WORKS</h1>
+		<div class="span-hr"></div>
 		<ul class="tabs">
 			<li>
 				<div class="front">
@@ -135,11 +139,11 @@
 				</div>
 				<div class="back">
 					<h2>Project Title</h2>
-                    <div class="links">
-                        <span> <img src="./images/img-view.png"/></span>
-                        <span> <img src="./images/img-link.png"/> </span>
-                        <span> <img src="./images/img-share.png"/> </span>
-                    </div>
+					<ul class="links">
+						<li class="view"><img src="./images/img-view.png" alt=view /></li>
+						<li class="link"><img src="./images/img-link.png" alt=link /></li>
+						<li class="share"><img src="./images/img-share.png" alt=share /></li>
+					</ul>
 					<div class="border"></div>
 				</div>
 			</li>
@@ -163,11 +167,11 @@
 				</div>
 				<div class="back">
 					<h2>Project Title</h2>
-					<div class="links">
-                        <span> <img src="./images/img-view.png"/></span>
-                        <span> <img src="./images/img-link.png"/> </span>
-                        <span> <img src="./images/img-share.png"/> </span>
-					</div>
+					<ul class="links">
+						<li class="view"></li>
+						<li class="link"></li>
+						<li class="share"></li>
+					</ul>
 					<div class="border"></div>
 				</div>
 			</li>
@@ -217,23 +221,32 @@
 		<button class="btn-loadmore">LOAD MORE</button>
 	</div>
 
-
+</div>
 	<!-- ***********STATISTIKS ******* -->
-	<div class="statistic">
-        <p> <span>10</span>Years Experience</p>
-        <p> <span>120</span> Project Delivered </p>
-        <p> <span>10</span> Seconds on this site!
-            What are you waiting for?</p>
-	</div>
-
+	<ul class="statistiks">
+	<li>
+		<h1>10</h1>
+		<h2>Years Experience</h2>
+	</li>
+	<li>
+		<h1>120</h1>
+		<h2>Projects Delivered</h2>
+	</li>
+	<li>
+		<h1>10</h1>
+		<h2>Seconds on this site! What are you waiting for?</h2>
+	</li>
+	</ul>
+<div class="layout">
 	<div id="contact">
-        <h1>contact</h1>
+		<h1>contact</h1>
+		<div class="span-hr"></div>
 		<input type="text" placeholder="Name" />
 		<input type="text" placeholder="Mail" />
 		<input type="text" placeholder="Message" />
 		<button class="btn-hireme">HIRE ME <i class="fa fa-paper-plane"></i></button>
 	</div>
-</main>
+</div>
 <footer id="footer">
 	<ul>
 		<li class="social">
