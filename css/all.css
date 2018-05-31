@@ -6,18 +6,25 @@ figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, su
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	/*font-size: 100%;*/
+	/*font: inherit;*/
 	vertical-align: baseline;
 }
+
+div,a,section{
+	box-sizing: border-box;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section { display: block; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
+
+/**{*/
+    /*font-family: "Cormorant", sans-serif;*/
+/*}*/
+
 img {
 	border-style:none;
 	max-width:100%;
@@ -25,7 +32,6 @@ img {
 a {text-decoration:none;}
 a:hover {text-decoration:none;}
 input, textarea, select {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
 	vertical-align:middle;
 	color:#000;
 	padding:0;
@@ -48,28 +54,39 @@ ul {
 input::-webkit-input-placeholder{color:#bebebe;}
 input:focus::-webkit-input-placeholder{color:#bebebe;}
 /***************************************************              GENERAL STYLES             ***************************************************/
-h1 {
-	font: 36px sans-serif;
-	font-family: 'Cormorant';
-	text-transform: uppercase;
+
+
+h3 {
+    font: 36px sans-serif;
+    font-family: "Cormorant", sans-serif;
+    text-transform: uppercase;
+	text-align: center;
+    margin: 10px auto 0 auto;
+}
+h3:after {
+	content: "";
+	display: block;
 	margin: 10px auto 0 auto;
-
-
+	width: 60px;
+	height: 6px;
+	background: url("../images/span-hr.png") no-repeat center;
 }
-h2 {font: 30px sans-serif;
-font-family: 'Cormorant';
-font-weight: 500;
-/* color: white; */
+h4 {
+	font-size: 24px;
+	font-weight: 600;
+	margin: 10px 0 10px 0;
+	font-family: "Cormorant", sans-serif;
 }
-h3 {font: 23px sans-serif;}
-h4 {font: 21px sans-serif;}
-h5 {font: 18px sans-serif;}
-h6 {font: 16px sans-serif;}
+
 p {
 	font: 16px sans-serif;
-	font-family: 'Cormorant';
+	font-family: 'Cormorant', sans-serif;
 }
 strong {}
+
+button {
+	box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.15);
+}
 /**********************************************************              PC - LARGE             *************************************************/
 /*@media (min-width: 1218px) and (max-width: 10000px) {}*/
 
@@ -81,17 +98,6 @@ strong {}
   margin: 0 auto;
   position: relative;
   width: 1170px;
-}
-
-.span-hr {
-	display: block;
-	position: relative;
-	margin: 10px auto 0 auto;
-	width: 60px;
-	height: 6px;
-	background-image: url(../images/span-hr.png);
-	background-repeat: no-repeat;
-  background-position: center;
 }
 
 #footer {
@@ -114,17 +120,15 @@ strong {}
 	position: relative;
 	margin-top: 75px;
 }
-#header .logo{
-	float: left;
-	text-transform: lowercase;
-}
 
-#header .logo a {
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-size: 24px;
-	font-weight: 700;
-	color: black;
+
+#header h1 {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Montserrat",  sans-serif;
+		float: left;
+		margin: 0 0 0 58px ;
 }
 
 #header .menu{
@@ -136,13 +140,13 @@ strong {}
 #header .menu li{
 	display: inline-block;
 	margin: 0 -2px 0 -2px;
-	font-family: 'Cormorant';
+	font-family: 'Cormorant', sans-serif;
 	text-transform: uppercase;
 }
 
 #header .menu li a{
 		color: black;
-		margin: 0px 10px;
+	margin: 0 10px;
 }
 
 #header .menu li a:hover{
@@ -177,15 +181,18 @@ margin: 72px auto;
 	padding: 130px 0 0 130px;
 }
 
-#home .hero-content h1 {
+#home .hero-content h2 {
 	font-size: 46px;
-	font-family: 'Cormorant';
+	font-family: 'Cormorant', sans-serif;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 #home .hero-content p {
 	padding: 0 0 20px 0;
 	font-weight: normal;
+	font-size: 22px;
+	font-family: 'Cormorant', sans-serif;
 }
 
 #home .hero-content .btn-hireme {
@@ -195,7 +202,7 @@ margin: 72px auto;
 	border: 1px solid #212121;
 	font-size: 16px ;
 	font-weight: 400;
-	font-family: 'Cormorant';
+	font-family: 'Cormorant', sans-serif;
 }
 
 #home .hero-content .btn-expmore {
@@ -205,7 +212,7 @@ margin: 72px auto;
 	border: 1px solid #212121;
 	font-size: 16px ;
 	font-weight: 400;
-	font-family: 'Cormorant';
+	font-family: 'Cormorant', sans-serif;
 	margin: 0 0 0 20px;
 }
 
@@ -224,7 +231,7 @@ margin: 72px auto;
 	height: 457px;
 	border: 17px solid #e8e8e8;
 	border-left: none;
-	margin: -250px 0 0 -180px;
+	margin: -250px 0 0 -160px;
 	z-index: 1;
 }
 /*************************** ABOUT*********************/
@@ -238,6 +245,10 @@ margin: 72px auto;
 	height: 100px;
 	margin: 35px auto;
 }
+#about p span{
+	font-weight: bold;
+}
+
 
 #about .btn-download{
 	width: 208px;
@@ -246,7 +257,7 @@ margin: 72px auto;
 	border: 1px solid #212121;
 	font-size: 16px ;
 	font-weight: 400;
-	font-family: 'Cormorant';
+	font-family: 'Cormorant', sans-serif;
 }
 
 #about .btn-download:hover{
@@ -254,21 +265,37 @@ margin: 72px auto;
 	color: white;
 }
 /*************************** SKILLS*********************/
+
+#skills {
+	margin: 116px 7.247% 71px 7.247%;
+}
+
 #skills h1  {
 	margin: 120px 0 0 0;
 	text-align: center;
 
 }
 #skills .progbars{
-	position: relative;
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
-	align-items: flex-start;
-	align-content:  space-around;
+	justify-content: space-between;
+	/*align-items: flex-start;*/
+	/*align-content:  space-around;*/
 	margin: 40px 0 0 0;
-	z-index: 1;
 }
+
+#skills .progbars .item{
+margin: 0;
+}
+#skills .progbars .item span{
+	display: block;
+	font-size: 24px;
+	color: black;
+	text-transform: uppercase;
+	margin: 0 0 8px 0;
+}
+
+
 #skills .progbars div{
 	flex-basis: 370px;
 }
@@ -276,17 +303,18 @@ margin: 72px auto;
 	height: 16px;
 	width: 100%;
 	background-color:  #e2e2e2;
+	margin: 0 0 43px;
 }
 #skills .progbars .progress{
 	height: 100%;
-	width: 0%;
+	width: 0;
 	background-color:  #212121;
 }
 
 #skills .progbars span{
 	font-size: 24px ;
 	font-weight: 300;
-	font-family: 'Cormorant';
+	font-family: 'Cormorant', sans-serif;
 	text-transform: uppercase;
 	text-align: left;
 }
@@ -295,37 +323,68 @@ margin: 72px auto;
 
 /*************************** WHAT-I-DO*********************/
 
-.service-bg{
-	background-image: url(../images/img-bg-whatido.png);
-	width: 1366px;
-	height: 911px;
+#service{
+		display: block;
 	position: relative;
-	z-index: 0;
-	margin: -300px auto;
+	height: auto;
+	overflow: hidden;
+}
+#service:before{
+	content: '';
+	display: block;
+	height: 400px;
+	width: 100%;
+	background: url(../images/img-bg-whatido.png) fixed;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-#service {
-	margin: 120px auto;
-	text-align: center;
-	height: 517px;
-	background-color: white;
+#service .whatIdo{
 	position: relative;
-	z-index: 1;
+	display: block;
+	z-index: 2;
+	width: 85.506%;
+	background-color: white;
+	overflow: hidden;
+	box-shadow: 0 0 40.18px 8.82px rgba(0, 0, 0, 0.15);
+	margin: 215px 7.247%  111px 7.247%;
+	text-align: center;
 }
-#service .conteiners{
+#service .whatIdo h3{
+	margin: 116px auto 42px auto;
+}
+
+#service .whatIdo .conteiners{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 40px auto;
 }
-#service .conteiners .front-end, .back-end, .consultancy{
+#service .whatIdo .conteiners .front-end, .back-end, .consultancy{
 	width: 300px;
-	height: 250px;
+	height: 300px;
 }
 
-#service h2{
+#service .whatIdo .conteiners .front-end{
+	margin-left: 40px;
+}
+#service .whatIdo .conteiners .consultancy{
+	margin-right: 40px;
+}
+
+#service .whatIdo .conteiners h4{
 	margin: 15px 0 10px;
 }
+
+
+#service .whatIdo .conteiners p {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+/****************************Portfolio***************************/
 
 #portfolio {
 	margin: 120px auto;
@@ -334,68 +393,114 @@ margin: 72px auto;
 	z-index: 1;
 }
 #portfolio .tabs{
-	width: 100%;
-	margin: 40px 0 30px 0;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	margin: 0 7.247% 11px 7.247%;
 }
 
 #portfolio .tabs li{
-	display: inline-block;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  width: 370px;
-  height: 282px;
-  margin: 25px 20px 5px 0;
+	width: 370px;
+	height: 281px;
+	margin: 0 0 30px 0;
+	transition: all 0.5s ease-out;
+	position: relative;
+	overflow: hidden;
 }
-#portfolio .tabs li:nth-child(3n) {
-  margin: 25px 0 5px 0;
-}
-
-#portfolio .tabs li:hover .front {
-  z-index: 1;
+#portfolio .tabs li:nth-child(1) {
+	background: url("../images/img-works-1.jpg") right;
 }
 
-#portfolio .tabs li:hover .back {
-  z-index: 10;
+#portfolio .tabs li:nth-child(2) {
+	background-image: url("../images/img-works-2.jpg");
+	background-position-x: right;
+	background-position-y: bottom;
+}
+#portfolio .tabs li:nth-child(3) {
+	background-image: url("../images/img-works-3.jpg");
 }
 
-#portofolio .tabs li .front {
-  display: block;
-  position: relative;
-  width: 370px;
-  height: 282px;
-  z-index: 10;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
+#portfolio .tabs li:nth-child(4) {
+	background-image: url("../images/img-works-4.jpg");
 }
 
-#portofolio .tabs li .back {
-  display: block;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  width: 370px;
-  height: 282px;
-  background-color: transparent;
-  z-index: 1;
+#portfolio .tabs li:nth-child(5) {
+	background-image: url("../images/img-works-5.jpg");
 }
 
-#portofolio .tabs li .back .links{
-  display: inline-block;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  z-index: 1;
+#portfolio .tabs li:nth-child(6) {
+	background-image: url("../images/img-works-6.jpg");
 }
+
+#portfolio .tabs li .back{
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.69);
+	transition: all 0.5s ease-out;
+}
+#portfolio .tabs li .back p{
+	color: white;
+	margin: 142px 0 12px 77px;
+	font-size: 30px;
+	text-transform: capitalize;
+	position: relative;
+	z-index: 5;
+}
+#portfolio .tabs li .back .icons{
+	display: inline-flex;
+	margin: 0 0 0 77px;
+}
+
+#portfolio .tabs li .back img{
+			margin: 8px auto;
+			 display: block;
+}
+
+#portfolio .tabs li .back span:nth-child(3)  img{
+			margin: 5px auto;
+
+}
+
+#portfolio .tabs li .back .icons span{
+	display: block;
+	position: relative;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	background: no-repeat center;
+	border: 2px solid white;
+	margin: 0 8px 0 0;
+	z-index: 5;
+
+	}
+ #portfolio .tabs li .back .icons span:hover{
+	background-color: white;
+	}
+#portfolio .tabs li .back .icons span:hover img{
+	filter: invert(100%);
+	}
+
+#portfolio .tabs li .back:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 44px;
+	left: 0;
+	border: 8px solid gray;
+	border-left: none;
+	height: 196px;
+	width: 155px;
+	box-sizing: border-box;
+		}
+#portfolio .tabs li:hover .back{
+ opacity: 1;
+ transition: all 0.5s ease-out;
+}
+
 
 #portfolio .btn-loadmore{
 	width: 174px;
@@ -404,7 +509,7 @@ margin: 72px auto;
 	border: 1px solid #212121;
 	font-size: 16px ;
 	font-weight: 400;
-	font-family: 'Cormorant';
+	font-family: 'Cormorant', sans-serif;
 	margin: 0 0 0 20px;
 }
 #portfolio .btn-loadmore:hover{
@@ -430,7 +535,7 @@ margin: 72px auto;
 	border: 1px solid #212121;
 	font-size: 16px ;
 	font-weight: 400;
-	font-family: 'Cormorant';
+	font-family: 'Cormorant', sans-serif;
 	margin: 0 0 0 20px;
 }
 #contact .btn-hireme:hover{
@@ -456,7 +561,7 @@ margin: 72px auto;
 
 #footer .copyRights{
 	color: white;
-	font-family: 'Cormorant';
+	font-family: 'Cormorant', sans-serif;
 	font-size: 16px;
 }
 #footer .social{
